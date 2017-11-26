@@ -66,11 +66,6 @@ if __name__ == '__main__':
     t_0=0
     t_mon=12
     t_year=2
-    t_a,t_m,t_n,t_0,t_mon,t_year = float(raw_input('输入金额：')),\
-                                   float(raw_input('输入产品利率：')),\
-                                   float(raw_input('输入借款利率:')),\
-                                   float(raw_input('输入前置自有金额:')),\
-                                   float(raw_input('输入借款记息周期（x>1 and x<12 and 12.mod(x)=0）单位月:')),\
-                                   float(raw_input('输入产品周期单位年 便不能为负数:'))
-    zzz=dd(t_0,t_mon,t_year).subs({a:t_a,m:t_m,n:t_n}).evalf(30)
+    t_a,t_m,t_n,t_0,t_mon,t_year = float(raw_input('输入金额：')),float(raw_input('输入产品利率：')),float(raw_input('输入借款利率:')),float(raw_input('输入前置自有金额:')),float(raw_input('输入借款记息周期（x>1 and x<12 and 12.mod(x)=0）单位月:')),float(raw_input('输入产品周期单位年 便不能为负数'))
+    zzz=dd(t_0,t_mon,t_year).subs({a:t_a,m:t_m,n:t_n}).evalf(8)
     pprint (zzz)
