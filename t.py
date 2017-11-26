@@ -55,12 +55,10 @@ def dd(ta,t,T):
     global i
     ta=calfs(a,calmon(t,a-ta))
     i +=1
-    print ta
     # return  ta
-    # print ta
+    print "第",i,"年:", ta
     return dd(ta,t,T) if i<T else ta
 if __name__ == '__main__':
     # pprint(calsum(2,6))
-    zzz=dd(0,6,1).subs({a:1.0,m:0.07,n:0.06}).evalf(30)
-
+    zzz=dd(0,6,2).subs({a:1.0,m:0.07,n:0.06}).evalf(30)
     pprint (zzz)
