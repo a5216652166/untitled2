@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 __author__ = '高岩'
 '''
           ┌─┐       ┌─┐
@@ -22,3 +23,9 @@ __author__ = '高岩'
              │ ─┤ ─┤       │ ─┤ ─┤         
              └──┴──┘       └──┴──┘ 
 '''
+
+import pandas as pd
+
+pdata=pd.DataFrame([[1],[2,3,6],[2,3,6],[2,3,6]] )
+pdata1=pd.DataFrame([[2],[2,3,6],[2,31,6],[2,3,6],[2,3,6,7]] )
+print (pdata / pdata1)**(float(1./3))

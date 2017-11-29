@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 import numpy as np
+import tushare
 '''
 先求x,y的平均值X,Y
 再用公式代入求解：b=(x1y1+x2y2+...xnyn-nXY)/(x12+x22+...xn2-nX2)
